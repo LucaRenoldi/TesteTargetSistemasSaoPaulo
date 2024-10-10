@@ -1,0 +1,28 @@
+//2)  Dado a sequência de Fibonacci, onde se inicia por 0 e 1 e o próximo valor sempre será a soma dos 2 valores anteriores (exemplo: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34...), escreva um programa na linguagem que desejar onde, informado um número, ele calcule a sequência de Fibonacci e retorne uma mensagem avisando se o número informado pertence ou não a sequência.
+
+
+//Resposta
+function isFibonacci(number){
+    if(number === 0 || number === 1){
+        console.log("Número pertence a sequência de Fibonacci");
+        return;
+    }
+    
+    var fibonacci = [0,1];
+    var index = 1;
+    var nextNumber = 0;
+    
+    while(nextNumber <= number){
+        if(fibonacci.includes(number)){
+            console.log("Número pertence a sequência de Fibonacci");
+            return;
+        }
+        
+        nextNumber = fibonacci[index - 1] + fibonacci[index];
+        fibonacci.push(nextNumber);
+        index++;
+    }
+    
+    console.log("Número não pertence a sequência de Fibonacci");
+    
+}
