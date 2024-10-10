@@ -2,6 +2,7 @@
 
 
 //Resposta
+ 
 function isFibonacci(number){
     if(number === 0 || number === 1){
         console.log("Número pertence a sequência de Fibonacci");
@@ -26,3 +27,11 @@ function isFibonacci(number){
     console.log("Número não pertence a sequência de Fibonacci");
     
 }
+
+// irei botar alguns números para uma maior amostra do código.
+isFibonacci(0);
+isFibonacci(5);
+isFibonacci(7);
+isFibonacci(10);
+isFibonacci(13);
+isFibonacci(77);
